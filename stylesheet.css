@@ -90,14 +90,28 @@ header {
 }
 
 .logo {
-  width: 124px;
-  margin-top: 20px;
+  width:150px;
+  padding: 1px;
 }
 
 .header-left {
   float: left;
-  color: white;
-  font-size: 34px;
+  background: rgba(255,255,255,0.1);
+	-o-transition: -o-transform ease-out 0.1s, background 0.2s;
+	-ms-transition: -ms-transform ease-out 0.1s, background 0.2s;
+	-webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+	transition: transform ease-out 0.1s, background 0.2s;
+	display: inline-block;
+	position: relative;
+	
+}
+
+.header-left:hover{
+  background: rgba(255,255,255,0.05);
+	-o-transform: scale(0.93);
+	-webkit-transform: scale(0.93);
+	-ms-transform: scale(0.93);
+	transform: scale(0.93);
 }
 
 .header-right {
